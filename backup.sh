@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PURPLE='\033[0;35m'
-NC='\033[0m'  # No Color
+NC='\033[0m'  # No Colorb  Hlw Nafiz Gandu Sala 
 
 
 echo -e "${PURPLE}====================================${NC}"
