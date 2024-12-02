@@ -36,10 +36,10 @@ check_network() {
     echo ""
 }
 
-# Function to list top processes
+# Function to list top processes with application name
 list_processes() {
     echo -e "${BLUE}=== TOP PROCESSES BY MEMORY USAGE ===${NC}"
-    ps aux --sort=-%mem | head -10 | awk '{printf "%s %s %s %s\n", $1, $2, $3, $4}'
+    ps aux --sort=-%mem | head -10 | awk '{printf "%-10s %-10s %-10s %-10s %-s\n", $1, $2, $3, $4, $11}'
     echo ""
 }
 
